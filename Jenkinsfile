@@ -14,8 +14,8 @@ pipeline{
 					}
 		stage('Git pull'){
 		    steps{
-				git credentialsId: 'git-cred-navin-latest', url: 'https://github.com/naveenik/read.git' , branch: '${node_lbl}"
+				git credentialsId: 'git-cred-navin-latest', url: 'https://github.com/naveenik/read.git' , branch: '${node_lbl}'
 			     }
 		    }
-		  }
-    }
+	      }
+        }
